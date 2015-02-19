@@ -7,20 +7,32 @@ layout: default
   <div class="logo">
     <img src="http://i.imgur.com/8Ax0KGr.png"/>
     <h1>Solid State</h1>
-    <p>A collection of tools and libraries for Reactjs and Flux</p>
+    <p>A collection of tools and libraries for Reactjs and Fluxjs</p>
   </div>
   <div class="content">
     <div class="grid">
       <div class="row">
         <h2>About</h2>
-        <p>These libraries and tools can help get you and your
-           team started with flux and react,
-           but can stay with you for the long hual. These modules
-           have been tested in the real world, and are the design
-           of research, usability, and common patterns we found
-           in the community. All of the flux portions aim to stay
-           true to facebook’s flux. We are not re-implementing
-           flux, but giving you the tools you will need around it.</p>
+
+        <p><em>"Flux is the application <span class="u">architecture</span> that Facebook uses for
+          building client-side web applications."</em>[<a href="http://facebook.github.io/flux/">source</a>]</p>
+
+        <p>Facebook's flux library <strong>only provides the dispatcher's base, not implementation,</strong> and documentation
+          on how to create the other parts of flux. Specifically, our
+        <a href="https://github.com/sstate/lcars/blob/master/src/index.js#L3">LCARS (dispatcher)</a> is
+        <a href="http://facebook.github.io/flux/docs/todo-list.html#creating-a-dispatcher">Facebook's
+          dispatcher</a>. Instead of implmenting that yourself, you can use <em>ours</em>. If you look at their
+          docs and replace their dispatcher with this one, chances are it will work. Our libraries follow their work.</p>
+
+        <p>These libraries and tools can help get you and your team started with flux and react, but can stay
+          with you for the long hual.</p>
+
+        <p>These modules have been tested in the real world, and are the design of research, usability, and
+          common patterns we found in the community. All of the flux portions aim to stay true to Facebook’s
+          Flux. We are not re-implementing flux, but giving you the tools you will need around it.</p>
+
+        <p><a href="https://github.com/sstate/examples">Check out our example flux-todomvc!</a></p>
+
         <div class="item">
           <h4>lcars - A queued flux dispatcher</h4>
           <ul>
